@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/carrosel.css">
+    <style>
+        .banner{
+            height: 80vh;
+            background: url("img/banner-img.jpeg") no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/be85d87fc2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="mobile-menu" onclick="activate()">
+            <i class="fa-solid fa-bars fa-2xl" style="color: #bbbcbf;"></i>
+        </div>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="#comeco">Início</a></li>
+                <li><a href="#ajsolucoes">AJsoluções</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#portifolio">Portifólio</a></li>
+                <li><a href="#contatos">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="logo">
+            <img src="img/logo-2.jpeg" alt="Logo da empresa">
+        </div>
+    </header>
+    <main>
+        <section class="banner" id="comeco">
+            <div class="conteudo-banner">
+                <div class="banner-conteudo animado">
+                <h1>Projetando com responsabilidade e sustentabilidade.</h1>
+                <p>Energia solar é economia, sustentabilidade, valorização de até 20% no imóvel e respeito ao meio
+                    ambiente. Seu futuro começa com essa escolha!
+                <div class="banner-btns">
+                    <a href="formulario.html" class="btn">Solicite seu orçamento</a>
+                    <a href="#" class="btn btn-outline">Saiba Mais</a>
+                </div>
+                </div>
+            </div>
+        </section>
+            <div class="container-portifolio" id="portifolio">
+                <div class="title-portifolio">
+                    <h2>Nosso Portifólio</h2>
+                    <p>Descrição Portifólio</p>
+                </div>
+                <div class="carrosel-container">
+                    <div class="carrosel">
+                        <div class="carrosel-item">
+                            <img src="img/lustre-grande.jpeg" alt="">
+                            <div class="carrosel-escrita">
+                                <h3>Lustre</h3>
+                                <p>escrita</p>
+                            </div>
+                        </div>
+                        <div class="carrosel-item">
+                            <img src="img/lustre-sala.jpeg" alt="">
+                            <div class="carrosel-escrita">
+                                <h3>Lustre</h3>
+                                <p>escrita</p>
+                            </div>
+                        </div>
+                        <div class="carrosel-item">
+                            <img src="img/santra-sala.jpeg" alt="">
+                            <div class="carrosel-escrita">
+                                <h3>Sancra</h3>
+                                <p>escrita</p>
+                            </div>
+                        </div>
+                        <div class="carrosel-item">
+                            <img src="img/foto-lustre-cozinha.jpeg" alt="">
+                            <div class="carrosel-escrita">
+                                <h3>Lustre Cozinha</h3>
+                                <p>escrita</p>
+                            </div>
+                        </div>
+                        <div class="carrosel-item">
+                            <img src="img/escada.jpeg" alt="">
+                            <div class="carrosel-escrita">
+                                <h3>Escada</h3>
+                                <p>escrita</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carrosel-controle">
+                        <button class="carrosel-control prev">❮</button>
+                        <button class="carrosel-control next">❯</button>
+                    </div>
+
+                    <div class="carrosel-indicadores">
+                        <span class="carrosel-indicador active"></span>
+                        <span class="carrosel-indicador"></span>
+                        <span class="carrosel-indicador"></span>
+                        <span class="carrosel-indicador"></span>
+                        <span class="carrosel-indicador"></span>
+                    </div>
+                </div>
+            </div>
+        <section class="cards" id="ajsolucoes">
+            <div class="conteudo-cards">
+                <div class="sessao-titulo">
+                    <h2>Por que escolher a AJ Soluçoes elétricas?</h2>
+                <p>Nossa missão é trabalhar de forma responsável e com amor pelas pessoas e pelo planeta. Ajudando a
+                    projetar sonhos e contribuir para que esses sejam realizados, à começar pela Energia.</p>
+                </div>
+                <div class="cards-grid">
+                    <div class="sessao-card animado delay-1">
+                        <div class="sessao-icon">
+                            <img src="img/broto.jpg" alt="" class="imagem">
+                        </div>
+                        <h3>Sustentabilidade</h3>
+                        <p>Sustentabilidade não é só uma tendência — é uma forma de cuidar do mundo. Cada escolha
+                            consciente é um gesto de amor pelo futuro.</p>
+                    </div>
+
+                    <div class="sessao-card animado delay-2">
+                        <div class="sessao-icon">
+                            <img src="img/cifrao.jpg" alt="" class="imagem">
+                        </div>
+                        <h3>Economia</h3>
+                        <p>Com redução de até 95% na sua tarifa de energia elétrica.</p>
+                    </div>
+
+                    <div class="sessao-card animado delay-3">
+                        <div class="sessao-icon">
+                            <img src="img/bonequinho.jpg" alt="" class="imagem">
+                        </div>
+                        <h3>Portifólio</h3>
+                        <p>Projetos elétricos;</p>
+                        <p>Instalações Elétricas;</p>
+                        <p>Instalação de usinas fotovoltáicas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="projetos" id="projetos">
+        <div class="conteudo-projetos">
+            <div class="sessao-titulo animado">
+                <h2>Projetos</h2>
+                <p>Conheça alguns dos nossos projetos de energia sustentavel.</p>
+            </div>
+
+            <div class="projetos-grid">
+                <div class="projeto-card animado delay-1">
+                    <div class="projeto-img">
+                        <img src="img/foto-homi.jpg" alt="">
+                    </div>
+                    <div class="projeto-info">
+                        <h3>Projeto 1</h3>
+                        <p>Descrição</p>
+                    </div>
+                </div>
+
+                <div class="projeto-card animado delay-2">
+                    <div class="projeto-img">
+                        <img src="img/foto-painel2.jpg" alt="">
+                    </div>
+                    <div class="projeto-info">
+                        <h3>Projeto 2</h3>
+                        <p>Descrição</p>
+                    </div>
+                </div>
+
+                <div class="projeto-card animado delay-3">
+                    <div class="projeto-img">
+                        <img src="img/foto-paisana.jpg" alt="">
+                    </div>
+                    <div class="projeto-info">
+                        <h3>Projeto 3</h3>
+                        <p>Descrição</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+    <footer class="rodape" id="contatos">
+        <div class="conteudo-rodape">
+            <div class="animado">
+                <h2>Tire suas Duvidas</h2>
+                <div class="coluna">
+                    <ul class="lista">
+                        <li class="negrito">Contato:</li>
+                        <li>(31) 97322-0076</li>
+                        <li class="negrito">Email:</li>
+                        <li>ajsolucoes.eletricasltda@gmail.com</li>
+                    </ul>
+                    <div class="qrcode">
+                        <a href="https://www.instagram.com/aj_solucoeseletricas">
+                            <img src="img/qrcode.jpeg" alt="qrcode-empresa-instagram">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script>
+        const navlist = document.querySelector(".nav-links");
+
+        function activate() {
+            navlist.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,342 @@
+/*Declaração de cores*/
+:root {
+    --primary: #04122b;
+    --secondary: #042446;
+    --dark: #2c3e50;
+    --light: #ecf0f1;
+    --accent: #fcb609;
+}
+/*reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    background-color: var(--light);
+    color: var(--dark);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+}
+/*cabecalho*/
+header{
+    display: flex;
+    padding: 1em;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, var(--secondary), var(--primary));
+    color: var(--light);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    & img{
+        width: 5em;
+        height: 5em;
+    }
+}
+/*navegação*/
+.nav-links {
+    display: flex;
+    list-style: none;
+    padding: 1rem;
+}
+.nav-links li{
+    margin: 0.5rem;
+}
+.nav-links a{
+    color: var(--light);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 0.5rem 0;
+    position: relative;
+}
+.nav-links a:hover{
+    color: var(--accent);
+}
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: var(--accent);
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease;
+}
+.nav-links a:hover::after {
+    width: 100%;
+}
+/*banner*/
+.banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+.banner-conteudo{
+    position: relative;
+    z-index: 1;
+    color: var(--light);
+    max-width: 600px;
+    margin: 5rem;
+}
+.banner h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+.banner p{
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+.btn{
+    display: inline-block;
+    background: var(--accent);
+    color: white;
+    padding: 0.8rem 1.8rem;
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgb(212, 176, 103);
+}
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgb(212, 176, 103);
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid white;
+    margin-left: 1rem;
+}
+.btn-outline:hover {
+    background: white;
+    color: var(--accent);
+}
+/*cards*/
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 0;
+    background: white;
+}
+.sessao-titulo{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.sessao-titulo h2{
+    font-size: 2.5rem;
+    color: var(--dark);
+    margin-bottom: 1rem;
+}
+.sessao-titulo p{
+    color: #7f8c8d;
+    max-width: 700px;
+    margin: 0 auto;
+}
+.cards-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2em;
+}
+.sessao-card{
+    background: var(--light);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.sessao-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+.sessao-icon {
+    font-size: 3rem;
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+}
+
+.sessao-card h3 {
+    margin-bottom: 1rem;
+    color: var(--dark);
+}
+/*projetos*/
+.projetos {
+    padding: 5rem 0;
+    background: var(--light);
+}
+
+.projetos-grid {
+    margin: 5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.projeto-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.projeto-card:hover {
+    transform: scale(1.03);
+}
+
+.projeto-img {
+    height: 200px;
+    overflow: hidden;
+}
+
+.projeto-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.projeto-card:hover .projeto-img img {
+    transform: scale(1.1);
+}
+
+.projeto-info {
+    padding: 1.5rem;
+}
+
+.projeto-info h3 {
+    margin-bottom: 0.5rem;
+}
+
+.projeto-info p {
+    color: #7f8c8d;
+    margin-bottom: 1rem;
+}
+/*rodapé*/
+.rodape {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white;
+    padding: 1rem 0;
+}
+.conteudo-rodape{
+    margin: 0 2rem 0 2rem;
+}
+.rodape h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.animado .lista {
+    text-decoration: none;
+    list-style: none;
+}
+
+.animado .negrito {
+    font-size: 20px;
+    font-weight: bold;
+    color: #7c7c8c;
+}
+.rodape .coluna{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.coluna .qrcode img{
+    width: 6em;
+    height: 6em;
+    margin-left: 88%;
+}
+
+/*animações*/
+.animado {
+    animation: fadeIn 0.8s ease forwards;
+}
+
+.delay-1 {
+    animation-delay: 0.2s;
+}
+
+.delay-2 {
+    animation-delay: 0.4s;
+}
+
+.delay-3 {
+    animation-delay: 0.6s;
+}
+
+.imagem {
+    width: 2em;
+    height: 2em;
+}
+/*menu mobile*/
+.mobile-menu {
+    display: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+@media(max-width: 768px){
+    .nav-links {
+        position: absolute;
+        top: 15.5vh;
+        left: 0;
+        width: 40vw;
+        height: 93vh;
+        background: linear-gradient(135deg, var(--primary), var(--secondary));
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-in;
+        z-index: 999;
+    }
+    .nav-links.active {
+        transform: translateX(0);
+    }
+    .navbar{
+        text-align: center;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .mobile-menu {
+        display: block;
+    }
+    .banner-conteudo{
+        margin: 3rem;
+    }
+    .banner-btns {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .btn-outline {
+        margin-left: 0;
+    }
+    .sessao-card{
+        margin: 1.5rem;
+    }
+    .projetos-grid{
+        margin: 1.5rem;
+    }
+    .coluna .qrcode img{
+    width: 6em;
+    height: 6em;
+    margin-left: 30%;
+    }
+}
